@@ -4,6 +4,7 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"/>
         <script src="https://cdn.tailwindcss.com"></script> 
         <script src="app.js"></script>
+        <title></title>
     </head>
     <body>
 
@@ -44,8 +45,23 @@
     <span class="sound">Tay Keith</span>
 </div>
 
+</div>
+
+<audio data-key="65" src=""></audio>
+<audio data-key="65" src=""></audio>
+<audio data-key="65" src=""></audio>
+<audio data-key="65" src=""></audio>
+<audio data-key="65" src=""></audio>
+<audio data-key="65" src=""></audio>
 
 
+<script>
+    window.addEventListener('keydown', function (e) {
+        const audio= document.querySelector(`audio[data-key="${e.keycode}"]`);
+       if(!audio) return; // stop the audio function from running all together
+
+    });
+</script>
 
 
 
